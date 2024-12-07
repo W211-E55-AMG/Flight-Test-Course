@@ -6,9 +6,11 @@ Conducted Flight Tests:
 <details>
 <summary> 1. Airspeed Calibration</summary>
 
-Objective: Determine airspeed calibration for the C172S-G1000 using the Global Positioning System Method.  
+## Objective: ##
 
-Associated Risks:
+Determine airspeed calibration for the C172S-G1000 using the Global Positioning System Method.  
+
+## Associated Risks: ##
 
 ![](Imgs/Risks.PNG)
 Probability | Severity | Event | Safety Risk
@@ -18,7 +20,7 @@ Remote  | Hazardous | Engine Failure  |  3B
 Improbable  | Catastrophic | Pilot Incapacitation  |  2A
 Remote  | Hazardous | Bird Strike  |  3A
 
-Risk Mitigations
+## Risk Mitigation ##
 
 1. Midair Collisions
     1.  Dedicate 1 engineer to searching for other aircraft during tests, and frequently monitor ADSB (All Riddle Cessna’s contain Mode S Transponders) during testing and regular flight
@@ -34,11 +36,14 @@ Risk Mitigations
    5.  Pilot should stay in command whilst the engineer besides the pilot reads to him the emergency checklist for the occurring failure from the pilot operating handbook
 
 3. Pilot Incapacitation
-              1.
+   1. Immediately Declare an emergency to ATC
+   2. Just in case this scenario occurs the engineer up front should be the one most versed with the aircraft or that who knows how to manage the radio to talk to atc
+   3. The pilot should have some fatigue management procedures in place like proper amount of rest, gaps in-between flights, and workload distribution in the cockpit
+
+4. Bird Strike
+   1. KDAB Airport employs cannons to scare away the birds
+   2. Fly at altitudes greater than 2000ft AGL to avoid encountering birds
+   3. Avoid training areas that contain bird farms 
+   
 </details>
 
-
- Markup : 1. A numbered list
-              1. A nested numbered list
-              2. Which is numbered
-          2. Which is numbered
