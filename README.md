@@ -19,7 +19,8 @@ Improbable  | Catastrophic | Pilot Incapacitation  |  2A
 Remote  | Hazardous | Bird Strike  |  3A
 
 Risk Mitigations
-Markup : 1. Midair Collisions
+
+ Markup : 1. Midair Collisions
               1.  Dedicate 1 engineer to searching for other aircraft during tests, and frequently monitor ADSB (All Riddle Cessna’s contain Mode S Transponders) during testing and regular flight 
               2.  Once stabilized Pilot will announce to others on training area frequency of location, altitude, and intentions before each run (a run includes all 3 legs of a test) 
               3.  Schedule a flight for an off-peak hour as to reduce the chance of encountering another aircraft in a training area  
