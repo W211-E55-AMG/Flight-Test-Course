@@ -15,4 +15,6 @@ Probability | Severity | Event
 | :--- | ---: | :---:
 Emxtremely Improbable  | Catastrophic | Midair Collision
 Remote  | Hazardous | Engine Failure
+Improbable  | Catastrophic | Pilot Incapacitation
+Remote  | Hazardous | Bird Strike
 </details>
