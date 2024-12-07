@@ -11,5 +11,8 @@ Objective: Determine airspeed calibration for the C172S-G1000 using the Global P
 Associated Risks:
 
 ![](Imgs/Risks.PNG)
-
+Probability | Severity | Event
+| :--- | ---: | :---:
+Emxtremely Improbable  | Catastrophic | Midair Collision
+Remote  | Hazardous | Engine Failure
 </details>
