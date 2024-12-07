@@ -1,17 +1,11 @@
 # Flight-Test-Course
 The following repository contains the data and code developed for analysis of each respective flight test that was conducted through out the course and the project of the course aswell.
 
-Conducted Flight Tests:
-
 <details>
-<summary> 1. Airspeed Calibration</summary>
-
-## Objective: ##
-
-Determine airspeed calibration for the C172S-G1000 using the Global Positioning System Method.  
+<summary>Risks & Mitigation</summary>
 
 ## Associated Risks: ##
-
+These are the general risk assessment that was done for all flights.
 ![](Imgs/Risks.PNG)
 Probability | Severity | Event | Safety Risk
 | :---: | :---:  | :---:  | :---:
@@ -43,7 +37,19 @@ Remote  | Hazardous | Bird Strike  |  3A
 4. Bird Strike
    1. KDAB Airport employs cannons to scare away the birds
    2. Fly at altitudes greater than 2000ft AGL to avoid encountering birds
-   3. Avoid training areas that contain bird farms 
+   3. Avoid training areas that contain bird farms
+</details>
+
+
+## Conducted Flight Tests:
+
+<details>
+<summary> 1. Airspeed Calibration</summary>
+
+## Objective: ##
+
+Determine airspeed calibration for the C172S-G1000 using the Global Positioning System Method.  
+ 
    
 </details>
 
