@@ -10,6 +10,6 @@ Objective: Determine airspeed calibration for the C172S-G1000 using the Global P
 
 Associated Risks:
 
-![](AirspeedCalibrationTest/Risks.PNG)
+![](Imgs/Risks.PNG)
 
 </details>
