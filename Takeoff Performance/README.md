@@ -113,7 +113,8 @@ The Simulink model uses equations of motion for takeoff and landing with engine 
 
 ## Instructions for Running the Simulink Model
 1. Open `Takeoff_Sim_my_data.slx` in MATLAB Simulink.  
-2. Run `initialize.m` 
-3. Adjust your parameters as need
-4. Run Simulink Model
+2. Run `initialize.m`
+3. Select "Import Data" on Matlab HOME, then select Output type as "Numeric Matrix"
+4. Adjust your parameters as need
+5. Run Simulink Model
 
