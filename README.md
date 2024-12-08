@@ -79,3 +79,26 @@ In conclusion, the position error analysis revealed mixed adherence to expected 
 
 </details>
 
+<details>
+<summary> 2. Stall Speed Determination</summary>
+
+## Objective: ##
+Determine stall speed (KIAS) for the C172S-G1000. 
+
+## Flight Test Briefing #
+![](Imgs/Stall_Briefing.jpg)
+
+## Flight Test Card ##
+![](Imgs/Test_Card1.jpg)
+![](Imgs/Test_Card2.jpg)
+
+## Results ##
+![](Imgs/Experimental.png)
+![](Imgs/Flight_Radar.png)
+![](Imgs/CL_EX.png)
+![](Imgs/CL_FR.png)
+![](Imgs/Stall_Table.PNG)
+
+## Analysis ##
+![](Imgs/POH_Stall.jpg)
+</details>
