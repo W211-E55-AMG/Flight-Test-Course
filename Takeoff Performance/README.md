@@ -75,6 +75,27 @@ Data for the takeoff runs was recorded at the following airports:
 The INS-based model uses data from a phone app that records accelerometer, gyroscope, and GPS signals.  
 - **Tools Used**: Phone sensors and data fusion.  
 - **Challenges**: Outlier corrections and sensor noise management.
+
+Below is the INS system:
+![image](https://github.com/user-attachments/assets/b81ba5c8-ee3b-4f9b-a71e-ae840c5abd50)
+
+The **Angles Daytona** subsystem takes roll, pitch, and yaw rates frrom the gyroscope and converts them into roll, pitch, and yaw. It is important to note that the original yaw position is very important to insert into the integrator.
+
+The **1D-INS (Daytona)** subsystem, shown below, performs two primary tasks:
+
+1. **Distance Calculation in the Body Frame**:  
+   The system integrates the \( N_x \) acceleration (forward acceleration in the body frame) to compute the distance traveled. This calculation only considers the **pitch** axis, excluding other rotational transformations. The **Ned to Body** subsystem does this task.  
+   - To ensure accuracy at takeoff, \( N_x \) is zeroed out at the starting point by subtracting the initial \( N_x \) value from the entire \( N_x \) array. Subtracting Nz by the acceleration due to gravity is addtionally an important part of the process.
+
+2. **Transformation to the NED Frame**:  
+   The subsystem converts the body-frame accelerations (\( N_x, N_y, N_z \)) into the **NED (North-East-Down)** reference frame using a standard **321 rotation** (roll-pitch-yaw transformation).  
+   - The transformed accelerations are integrated within their respective reference axes to obtain velocities and positions in the NED frame.
+
+This approach ensures that both body-frame distance and global NED-frame positions are accurately computed.
+![image](https://github.com/user-attachments/assets/1fa8961b-ad25-49ee-a78c-0ba4eff6056d)
+
+
+
 </details>
 
 <details>
@@ -82,6 +103,17 @@ The INS-based model uses data from a phone app that records accelerometer, gyros
 The GPS-based model uses position data logged by the phone's GPS sensors.  
 - **Tools Used**: Phyphox App for data logging.  
 - **Challenges**: Low time resolution and occasional GPS errors.
+
+The GPS system can be seen below:
+![image](https://github.com/user-attachments/assets/9443c760-0433-40f4-ba92-60028cb675c0)
+
+The **GPS (daytona)** subsystem is shown below. It uses 1D lookup tables that read from the Matlab workspace. It additionally converts lat/long to NED.
+![image](https://github.com/user-attachments/assets/6b2d8bba-9a9b-4d08-8202-cca72fb20660)
+
+The **Absolute dist** subsystem can be seen below. This just adjusts to where you would like to start your takeoff.
+![image](https://github.com/user-attachments/assets/87488ec5-46b7-4a65-979c-3ccbe74b5026)
+
+The **groundspeed**  subsystem is only used as alternative method to calculate velocity in case the provided velocity the phone calculates includes the Z axis.
 </details>
 
 <details>
@@ -89,6 +121,22 @@ The GPS-based model uses position data logged by the phone's GPS sensors.
 The Simulink model uses equations of motion for takeoff and landing with engine performance inputs.  
 - Includes rolling friction, lift, drag, and thrust forces.  
 - Tuning parameters include e, μ, $C_{L_0}$, and f.
+
+The Physics-Based Submodel can be seen below:
+![image](https://github.com/user-attachments/assets/7358e474-0706-4eb9-bfcd-0ce7e8459a16)
+
+The base **Engine Model** is very similiar to the one used in the power avaiable assignment. More details can be found there, the subsystem can be seen below:
+![image](https://github.com/user-attachments/assets/82a6b94c-f0f1-43d4-8bc7-c06ccb755679)
+
+The drag can be calculated with the following collections of blocks below. The **Cl Equation subsystem** is a $C_{L}$ =  $C_{L_0}$ + $C_{L_α}$ 
+![image](https://github.com/user-attachments/assets/19cabe97-79b1-4edd-b870-cd083440f301)
+
+The **Drag & Friction** subsystem calculates induced drag, parasyte drag, and rolling friction.
+![image](https://github.com/user-attachments/assets/73733d08-b051-4a77-a857-31a69fc457b7)
+
+Finally you can use the equations of motions to get position and velocity.
+![image](https://github.com/user-attachments/assets/5e842248-5d8c-4728-845f-94d1c8f6e295)
+
 </details>
 
 
