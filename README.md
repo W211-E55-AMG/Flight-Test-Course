@@ -57,9 +57,9 @@ Determine airspeed calibration for the C172S-G1000 using the Global Positioning 
 ![](Imgs/Airspeed_Test_Card.jpg)
 
 ## Results ##
-
+![](Imgs/Clean_config.png)
 ![](Imgs/Flaps10.png)
 ![](Imgs/Flaps20.png)
-
+![](Imgs/Flaps30_config.png)
 </details>
 
