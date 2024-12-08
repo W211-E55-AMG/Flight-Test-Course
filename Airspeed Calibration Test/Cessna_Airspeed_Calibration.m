@@ -15,7 +15,7 @@ flap20_vcal = []; flap20_pos_err = []; flap20_vias = [];
 flap30_vcal = []; flap30_pos_err = []; flap30_vias = [];
 
 % Read and process data from Excel file
-filename = 'C:\Users\gabri\OneDrive\Documents\AE\Flight Testing\Airspeed Calibration Post-Test\Data_Post_Processing.xlsx';
+filename = 'Data_Post_Processing.xlsx';
 
 % Process each sheet
 for sheet_idx = 1:length(sheets)
@@ -101,13 +101,12 @@ figure('Position', [100 100 1000 400])
 subplot(1,2,1)
 plot(clean_vias, clean_vcal, 'bo')
 hold on
-% Extend data range to include origin
-x_fit = linspace(0, max(clean_vias), 100);
-p = polyfit([0; clean_vias], [0; clean_vcal], 2);
+p = polyfit(clean_vias, clean_vcal, 2);
+x_fit = linspace(min(clean_vias), max(clean_vias), 100);
 y_fit = polyval(p, x_fit);
 plot(x_fit, y_fit, 'r-')
-xlim([0, max(clean_vias)+0.1*(max(clean_vias)-min(clean_vias))])
-ylim([0, max(clean_vcal)+0.1*(max(clean_vcal)-min(clean_vcal))])
+xlim([min(clean_vias)-0.1*(max(clean_vias)-min(clean_vias)), max(clean_vias)+0.1*(max(clean_vias)-min(clean_vias))])
+ylim([min(clean_vcal)-0.1*(max(clean_vcal)-min(clean_vcal)), max(clean_vcal)+0.1*(max(clean_vcal)-min(clean_vcal))])
 title('Clean Configuration: V_{cal} vs V_{ias}')
 xlabel('V_{ias} (kts)')
 ylabel('V_{cal} (kts)')
@@ -115,7 +114,7 @@ grid on
 
 subplot(1,2,2)
 plot(clean_vias, clean_pos_err, 'bo')
-xlim([0, max(clean_vias)+0.1*(max(clean_vias)-min(clean_vias))])
+xlim([min(clean_vias)-0.1*(max(clean_vias)-min(clean_vias)), max(clean_vias)+0.1*(max(clean_vias)-min(clean_vias))])
 ylim([min(clean_pos_err)-0.1*(max(clean_pos_err)-min(clean_pos_err)), max(clean_pos_err)+0.1*(max(clean_pos_err)-min(clean_pos_err))])
 title('Clean Configuration: Position Error vs V_{ias}')
 xlabel('V_{ias} (kts)')
@@ -128,13 +127,12 @@ figure('Position', [100 100 1000 400])
 subplot(1,2,1)
 plot(flap10_vias, flap10_vcal, 'bo')
 hold on
-% Extend data range to include origin
-x_fit = linspace(0, max(flap10_vias), 100);
-p = polyfit([0; flap10_vias], [0; flap10_vcal], 2);
+p = polyfit(flap10_vias, flap10_vcal, 2);
+x_fit = linspace(min(flap10_vias), max(flap10_vias), 100);
 y_fit = polyval(p, x_fit);
 plot(x_fit, y_fit, 'r-')
-xlim([0, max(flap10_vias)+0.1*(max(flap10_vias)-min(flap10_vias))])
-ylim([0, max(flap10_vcal)+0.1*(max(flap10_vcal)-min(flap10_vcal))])
+xlim([min(flap10_vias)-0.1*(max(flap10_vias)-min(flap10_vias)), max(flap10_vias)+0.1*(max(flap10_vias)-min(flap10_vias))])
+ylim([min(flap10_vcal)-0.1*(max(flap10_vcal)-min(flap10_vcal)), max(flap10_vcal)+0.1*(max(flap10_vcal)-min(flap10_vcal))])
 title('Flap 10 Configuration: V_{cal} vs V_{ias}')
 xlabel('V_{ias} (kts)')
 ylabel('V_{cal} (kts)')
@@ -142,7 +140,7 @@ grid on
 
 subplot(1,2,2)
 plot(flap10_vias, flap10_pos_err, 'bo')
-xlim([0, max(flap10_vias)+0.1*(max(flap10_vias)-min(flap10_vias))])
+xlim([min(flap10_vias)-0.1*(max(flap10_vias)-min(flap10_vias)), max(flap10_vias)+0.1*(max(flap10_vias)-min(flap10_vias))])
 ylim([min(flap10_pos_err)-0.1*(max(flap10_pos_err)-min(flap10_pos_err)), max(flap10_pos_err)+0.1*(max(flap10_pos_err)-min(flap10_pos_err))])
 title('Flap 10 Configuration: Position Error vs V_{ias}')
 xlabel('V_{ias} (kts)')
@@ -155,13 +153,12 @@ figure('Position', [100 100 1000 400])
 subplot(1,2,1)
 plot(flap20_vias, flap20_vcal, 'bo')
 hold on
-% Extend data range to include origin
-x_fit = linspace(0, max(flap20_vias), 100);
-p = polyfit([0; flap20_vias], [0; flap20_vcal], 2);
+p = polyfit(flap20_vias, flap20_vcal, 2);
+x_fit = linspace(min(flap20_vias), max(flap20_vias), 100);
 y_fit = polyval(p, x_fit);
 plot(x_fit, y_fit, 'r-')
-xlim([0, max(flap20_vias)+0.1*(max(flap20_vias)-min(flap20_vias))])
-ylim([0, max(flap20_vcal)+0.1*(max(flap20_vcal)-min(flap20_vcal))])
+xlim([min(flap20_vias)-0.1*(max(flap20_vias)-min(flap20_vias)), max(flap20_vias)+0.1*(max(flap20_vias)-min(flap20_vias))])
+ylim([min(flap20_vcal)-0.1*(max(flap20_vcal)-min(flap20_vcal)), max(flap20_vcal)+0.1*(max(flap20_vcal)-min(flap20_vcal))])
 title('Flap 20 Configuration: V_{cal} vs V_{ias}')
 xlabel('V_{ias} (kts)')
 ylabel('V_{cal} (kts)')
@@ -169,7 +166,7 @@ grid on
 
 subplot(1,2,2)
 plot(flap20_vias, flap20_pos_err, 'bo')
-xlim([0, max(flap20_vias)+0.1*(max(flap20_vias)-min(flap20_vias))])
+xlim([min(flap20_vias)-0.1*(max(flap20_vias)-min(flap20_vias)), max(flap20_vias)+0.1*(max(flap20_vias)-min(flap20_vias))])
 ylim([min(flap20_pos_err)-0.1*(max(flap20_pos_err)-min(flap20_pos_err)), max(flap20_pos_err)+0.1*(max(flap20_pos_err)-min(flap20_pos_err))])
 title('Flap 20 Configuration: Position Error vs V_{ias}')
 xlabel('V_{ias} (kts)')
@@ -182,13 +179,12 @@ figure('Position', [100 100 1000 400])
 subplot(1,2,1)
 plot(flap30_vias, flap30_vcal, 'bo')
 hold on
-% Extend data range to include origin
-x_fit = linspace(0, max(flap30_vias), 100);
-p = polyfit([0; flap30_vias], [0; flap30_vcal], 2);
+p = polyfit(flap30_vias, flap30_vcal, 2);
+x_fit = linspace(min(flap30_vias), max(flap30_vias), 100);
 y_fit = polyval(p, x_fit);
 plot(x_fit, y_fit, 'r-')
-xlim([0, max(flap30_vias)+0.1*(max(flap30_vias)-min(flap30_vias))])
-ylim([0, max(flap30_vcal)+0.1*(max(flap30_vcal)-min(flap30_vcal))])
+xlim([min(flap30_vias)-0.1*(max(flap30_vias)-min(flap30_vias)), max(flap30_vias)+0.1*(max(flap30_vias)-min(flap30_vias))])
+ylim([min(flap30_vcal)-0.1*(max(flap30_vcal)-min(flap30_vcal)), max(flap30_vcal)+0.1*(max(flap30_vcal)-min(flap30_vcal))])
 title('Flap 30 Configuration: V_{cal} vs V_{ias}')
 xlabel('V_{ias} (kts)')
 ylabel('V_{cal} (kts)')
@@ -196,7 +192,7 @@ grid on
 
 subplot(1,2,2)
 plot(flap30_vias, flap30_pos_err, 'bo')
-xlim([0, max(flap30_vias)+0.1*(max(flap30_vias)-min(flap30_vias))])
+xlim([min(flap30_vias)-0.1*(max(flap30_vias)-min(flap30_vias)), max(flap30_vias)+0.1*(max(flap30_vias)-min(flap30_vias))])
 ylim([min(flap30_pos_err)-0.1*(max(flap30_pos_err)-min(flap30_pos_err)), max(flap30_pos_err)+0.1*(max(flap30_pos_err)-min(flap30_pos_err))])
 title('Flap 30 Configuration: Position Error vs V_{ias}')
 xlabel('V_{ias} (kts)')
