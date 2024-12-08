@@ -50,6 +50,13 @@ Remote  | Hazardous | Bird Strike  |  3A
 
 Determine airspeed calibration for the C172S-G1000 using the Global Positioning System Method.  
  
-   
+## Flight Test Briefing #
+![](Imgs/Airspeed_Flight_Brief.jpg)
+
+## Flight Test Card ##
+![](Imgs/Airspeed_Test_Card.jpg)
+
+## Results ##
+
 </details>
 
