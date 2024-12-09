@@ -97,8 +97,23 @@ Determine stall speed (KIAS) for the C172S-G1000.
 ![](Imgs/Flight_Radar.png)
 ![](Imgs/CL_EX.png)
 ![](Imgs/CL_FR.png)
-![](Imgs/Stall_Table.PNG)
+![](Imgs/Stall_Tables.PNG)
 
 ## Analysis ##
 ![](Imgs/POH_Stall.jpg)
+![](Imgs/Abbot_Naca_2412.PNG)
+
+Looking at the Pilot Operating Handbook (POH) flight test data, there were some major discrepancies when comparing with Abbott & von Doenhoff's data and our experimental CLmax calculations. Starting with the POH stall speed with respect to bank angle, the majority of our experimental results showed percent differences greater than five percent when compared to the POH values. This suggests potential errors in our data collection, which can likely be attributed to wind conditions during testing. This conclusion is supported by our indicated airspeed (KIAS) being significantly lower than our Ground Speed (GS), a condition typically associated with a tailwind rather than a headwind.
+
+![](Imgs/Wind_Stall.PNG)
+
+At the time of testing, winds were recorded at 9 mph (7.82 knots). When this wind correction was applied to the KIAS data collected from the experiment, the resulting values aligned much more closely with the POH values for stall speed with respect to bank angle. This correlation suggests that wind conditions, rather than pilot technique, were the primary source of error in our calculation
+
+![](Imgs/Stall_Wind_Table.PNG)
+
+Regarding our CLmax calculations, using the raw KIAS data produced unrealistic CLmax values, while calculations based on Ground Speed yielded more reasonable results. The Cessna 172 uses a NACA 2412 airfoil, and according to Abbott & von Doenhoff's data, this airfoil should produce a CLmax of approximately 1.6. However, it should be noted that wind corrections were not incorporated into the code to determine if this would provide CLmax estimates closer to the expected value.
+
+## Conclusion ##
+
+In conclusion, the analysis of flight test data revealed significant impacts of wind conditions on our experimental results. The comparison between POH values and experimental data for stall speeds at various bank angles showed discrepancies greater than five percent, which were largely reconciled when wind corrections were applied to the KIAS measurements. This finding emphasizes the crucial role of environmental conditions in flight testing and the importance of proper wind corrections for accurate data analysis. Furthermore, the CLmax calculations demonstrated the significance of using appropriate speed measurements, as calculations using Ground Speed produced more realistic values compared to those using uncorrected KIAS. While our analysis identified wind as a possible primary source of experimental error, future testing could be improved by conducting experiments during more ideal weather conditions with minimal wind, preferably during early morning hours when atmospheric conditions are typically more stable. Additionally, incorporating wind corrections directly into the CLmax calculations and ensuring more comprehensive documentation of atmospheric conditions would enhance the accuracy of results. Despite these limitations, this investigation provides valuable insights into the relationship between theoretical aerodynamic predictions and real-world flight test data, while highlighting the importance of accounting for environmental factors in experimental aviation research.
 </details>
