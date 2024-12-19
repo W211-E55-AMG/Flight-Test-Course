@@ -303,4 +303,7 @@ Determine climb performance for the C172S-G1000 by measuring the direct rate of 
 ## Flight Test Card ##
 ![](Imgs/ROC_Plane1.jpg)
 ![](Imgs/ROC_Plane2.jpg)
+
+## Discussion ##
+For this Flight Test there will be no section about results, analysis or conclusion due to the fact not all of the groups where able to complete this test. The reason is that when approaching the flight ceiling of the aircraft the longer this test will take 
 </details>
