@@ -120,7 +120,7 @@ In conclusion, the analysis of flight test data revealed significant impacts of 
 
 <details>
     <summary>3. Takeoff Performance</summary>
-    # Simulink Model: Takeoff Analysis
+
 
 ## Overview
 This project compares takeoff models using three approaches: 
@@ -288,5 +288,14 @@ Finally you can use the equations of motions to get position and velocity.
 4. Adjust your parameters as need
 5. Run Simulink Model
 
+
+</details>
+
+<details>
+    <summary>4. Climb Performance</summary>
+## Objective ##
+    Determine climb performance for the C172S-G1000 by measuring the direct rate of climb
+
+## Flight Test Briefing ##
 
 </details>
