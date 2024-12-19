@@ -311,9 +311,9 @@ For this Flight Test, there will be no section about results, analysis, or concl
 
 This is due to the fact that both conditions cause the air to be less dense. Assuming we want to maintain the momentum equation $` \int{ρ_1V_dy}=\int{ρ_2V_2dy} `$ or $` ρ_1V_1A_disc=ρ_2V_2A_disc `$ ​ in equilibrium, velocity would have to change with respect to density, as the propeller disc plane area remains constant. To account for the loss in density, whether due to an increase in altitude, temperature, or both, the horizontal component has to increase while the vertical component decreases, reducing the airplane's rate of climb (ROC). This allows the plane to maintain the same amount of lift given by the following equation: %` L = C_L0.5ρV^2A. This is why as a plane climbs in altitude, its ROC decreases with respect to increases in altitude and/or temperature. It's important for pilots to keep this effect in mind to facilitate their flight planning.
 
-![](Imgs/Anderson_Momentum)
+![](Imgs/Anderson_Momentum.png)
 
-![](Imgs/Disc_Area)
+![](Imgs/Disc_Area.png)
 
 For example, consider a pilot flying a Cessna 172S G1000 who wants to reach a cruising altitude of FL130 (Flight Level 13,000ft) in a safe manner. What would be their climb schedule on a standard day? The safest approach would be to select a ROC of 135 ft/min, which is doable but ATC would most likely ask the pilot to expedite their flight depending on the airspace and air traffic density. Alternatively, they could start at a ROC of 500 ft/min until FL60, switch to a ROC of 285 ft/min until FL120, and finally switch to a ROC of 180 ft/min until reaching FL130. A flight plan like this would be more reasonable since each ROC value has a given margin of safety from its maximum allowable value at its designated switch condition. This allows the pilot extra time to react in case of an emergency or if a distraction occurs within the cabin. There are multiple possible answers to this question which are technically correct but realistically wouldn't be plausible or make sense.
 Showing the importance of flight testing and how its needed to verify the calculated limitations of the aircraft to develop safe operating handbooks for pilots.
