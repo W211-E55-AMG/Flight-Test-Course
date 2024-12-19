@@ -305,5 +305,5 @@ Determine climb performance for the C172S-G1000 by measuring the direct rate of 
 ![](Imgs/ROC_Plane2.jpg)
 
 ## Discussion ##
-For this Flight Test there will be no section about results, analysis or conclusion due to the fact not all of the groups where able to complete this test. The reason is that when approaching the flight ceiling of the aircraft the longer this test will take 
+For this Flight Test there will be no section about results, analysis or conclusion due to the fact not all of the groups where able to complete this test. The reason is that the university aircraft are designated for flight students making it complicated toe schedule a flight with enough time to test the climb performance at higher altitudes. As can be seen in the image below the higher in altitude the and temperature the lower the rate of climb is of the aircraft. This is due to the fact both conditions causes the air to be less dense. Recalling the momentum equation $` ρ_1V_1A=ρ_2V_2A `$
 </details>
