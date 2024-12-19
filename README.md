@@ -293,9 +293,12 @@ Finally you can use the equations of motions to get position and velocity.
 
 <details>
     <summary>4. Climb Performance</summary>
+    
 ## Objective ##
-    Determine climb performance for the C172S-G1000 by measuring the direct rate of climb
+Determine climb performance for the C172S-G1000 by measuring the direct rate of climb
 
 ## Flight Test Briefing ##
+![](Imgs/ROC_Brief.jpg)
+
 
 </details>
