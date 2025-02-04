@@ -318,3 +318,69 @@ This is due to the fact that both conditions cause the air to be less dense. Ass
 For example, consider a pilot flying a Cessna 172S G1000 who wants to reach a cruising altitude of FL130 (Flight Level 13,000ft) in a safe manner. What would be their climb schedule on a standard day? The safest approach would be to select a ROC of 135 ft/min, which is doable but ATC would most likely ask the pilot to expedite their flight depending on the airspace and air traffic density. Alternatively, they could start at a ROC of 500 ft/min until FL60, switch to a ROC of 285 ft/min until FL120, and finally switch to a ROC of 180 ft/min until reaching FL130. A flight plan like this would be more reasonable since each ROC value has a given margin of safety from its maximum allowable value at its designated switch condition. This allows the pilot extra time to react in case of an emergency or if a distraction occurs within the cabin. There are multiple possible answers to this question which are technically correct but realistically wouldn't be plausible or make sense.
 Showing the importance of flight testing and how its needed to verify the calculated limitations of the aircraft to develop safe operating handbooks for pilots.
 </details>
+
+
+
+
+<details>
+    <summary>5. Cessna Performance Determination from POH</summary>
+
+This assignment focuses on analyzing the drag polar and overall performance of the Cessna 172S aircraft used on the ERAU flight line. By using data from the aircraft manual, students will compute key aerodynamic parameters and generate performance plots.
+
+## Objectives
+
+1. **Determine Aerodynamic Parameters**: Using six data points from the Pilot's Operating Handbook (POH) for ISA 0 at 2,000' altitude, calculate:
+   - Oswald's efficiency factor (\(e\)).
+   - Equivalent flat plate area (\(f\)).
+
+2. **Plot Performance Characteristics**:
+   - Total drag vs. speed (70 knots to 120 knots).
+   - Thrust vs. speed.
+   - Power required and power available vs. speed.
+   - Excess power vs. speed.
+   - Rate of climb (ft/min) vs. speed.
+   - Lift-to-drag ratio (\(L/D\)) vs. speed.
+
+## Data Source
+
+**C-172S Manual**: Basic aircraft specifications, including wing area, wingspan, gross weight, and engine power, are sourced from the manual's front section. Page 131 (5-19) provides the required performance data.
+  
+<details>
+<summary> Cruise Performance Tables </summary> 
+![](Imgs/Cruise Performance Tables.png)
+
+</details>
+<details>
+<summary> Determining PV vs V^4 Diagram </summary> 
+![](Imgs/PV.png)
+</details>
+
+## Assumptions
+- Propeller efficiency (\(η_p\)) is constant at 0.80 across all data points.
+- Calculations and plots assume standard conditions (ISA 0).
+## Equations
+
+The following equations were used in the analysis:
+
+1. **Power Available vs. Speed**:
+   PV = mV² = (1/2) * ρ * V⁴ * f + (2 / (ρ * π * e)) * (W / b)²
+
+2. **Linear Regression Equation**:
+   Y = 0.0066x + 1,703,714
+
+3. **Slope of Drag Polar (m)**:
+   m = (1/2) * ρ * f
+
+4. **Oswald's Efficiency Factor (b)**:
+   b = (2 / (ρ * π * e)) * (W / b)²
+
+
+## Deliverables
+
+1. Accurate estimation of aerodynamic parameters (\(e\) and \(f\)).
+2. Visual performance plots for the specified conditions.
+![](Imgs/plots_POH.png)
+
+</details>
+
+
