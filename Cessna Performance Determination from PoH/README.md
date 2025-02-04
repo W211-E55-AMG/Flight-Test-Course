@@ -18,20 +18,19 @@ This assignment focuses on analyzing the drag polar and overall performance of t
 
 ## Data Source
 
-- **C-172S Manual**: Basic aircraft specifications, including wing area, wingspan, gross weight, and engine power, are sourced from the manual's front section. 
-- Page 131 (5-19) provides the required performance data.
+**C-172S Manual**: Basic aircraft specifications, including wing area, wingspan, gross weight, and engine power, are sourced from the manual's front section. Page 131 (5-19) provides the required performance data.
   
 <details>
-<summary>Cruise Performance Tables </summary> 
-  ![image](https://github.com/user-attachments/assets/2345c4d4-3edb-4ca4-8dbc-e6f884c0d4e8)
+<summary> Cruise Performance Tables </summary> 
+![](Imgs/Cruise Performance Tables.png)
 </details>
+
 <details>
-<summary>Determining PV vs V^4 </summary> 
-  ![image](https://github.com/user-attachments/assets/f9da4d3c-b814-42e0-bf85-a3d29cb18b1a)
+<summary> Determining PV vs V^4 Diagram </summary> 
+  ![](Imgs/PV)
 </details>
 
 ## Assumptions
-
 - Propeller efficiency (\(η_p\)) is constant at 0.80 across all data points.
 - Calculations and plots assume standard conditions (ISA 0).
 ## Equations
@@ -39,26 +38,20 @@ This assignment focuses on analyzing the drag polar and overall performance of t
 The following equations were used in the analysis:
 
 1. **Power Available vs. Speed**:
-   \[
-   PV = mV^2 = \frac{1}{2} \rho V^4 f + \frac{2}{\rho \pi e} \left(\frac{W}{b}\right)^2
-   \]
+   PV = mV² = (1/2) * ρ * V⁴ * f + (2 / (ρ * π * e)) * (W / b)²
 
 2. **Linear Regression Equation**:
-   \[
    Y = 0.0066x + 1,703,714
-   \]
 
 3. **Slope of Drag Polar (m)**:
-   \[
-   m = \frac{1}{2} \rho f
-   \]
+   m = (1/2) * ρ * f
 
 4. **Oswald's Efficiency Factor (b)**:
-   \[
-   b = \frac{2}{\rho \pi e} \left(\frac{W}{b}\right)^2
-   \]
+   b = (2 / (ρ * π * e)) * (W / b)²
+
 
 ## Deliverables
 
 1. Accurate estimation of aerodynamic parameters (\(e\) and \(f\)).
 2. Visual performance plots for the specified conditions.
+![](Imgs/plots_POH.png)
