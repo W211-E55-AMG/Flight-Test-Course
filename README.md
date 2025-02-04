@@ -386,7 +386,7 @@ The following equations were used in the analysis:
 
 </details>
 <details>
-<summary> Power Available & Power Required </summary> 
+<summary>6. Power Available & Power Required </summary> 
 
 This project analyzes the aerodynamic efficiency and performance characteristics of the Cessna 172S (C172S) aircraft. Using data from the Pilot's Operating Handbook (POH) and Simulink models, thrust, drag, velocity relationships, and altitude performance are explored.
 
