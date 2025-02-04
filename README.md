@@ -347,12 +347,14 @@ This assignment focuses on analyzing the drag polar and overall performance of t
   
 <details>
 <summary> Cruise Performance Tables </summary> 
-![](Imgs/Cruise Performance Tables.png)
+    
+![](Imgs/Cruise_Performance_Tables.png)
 
 </details>
 <details>
 <summary> Determining PV vs V^4 Diagram </summary> 
-![](Imgs/PV.png)
+    
+![](Imgs/PV_test.png)
 </details>
 
 ## Assumptions
@@ -380,6 +382,7 @@ The following equations were used in the analysis:
 1. Accurate estimation of aerodynamic parameters (\(e\) and \(f\)).
 2. Visual performance plots for the specified conditions.
 ![](Imgs/plots_POH.png)
+
 
 </details>
 
