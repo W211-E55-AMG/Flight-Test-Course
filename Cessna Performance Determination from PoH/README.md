@@ -1,4 +1,4 @@
-# Estimation of Drag Polar and Performance for the C-172S
+# Cessna Performance Determination from POH
 
 This assignment focuses on analyzing the drag polar and overall performance of the Cessna 172S aircraft used on the ERAU flight line. By using data from the aircraft manual, students will compute key aerodynamic parameters and generate performance plots.
 
@@ -22,12 +22,14 @@ This assignment focuses on analyzing the drag polar and overall performance of t
   
 <details>
 <summary> Cruise Performance Tables </summary> 
-![](Imgs/Cruise Performance Tables.png)
-</details>
+    
+![](Imgs/Cruise_Performance_Tables.png)
 
+</details>
 <details>
 <summary> Determining PV vs V^4 Diagram </summary> 
-  ![](Imgs/PV)
+    
+![](Imgs/PV_test.png)
 </details>
 
 ## Assumptions
